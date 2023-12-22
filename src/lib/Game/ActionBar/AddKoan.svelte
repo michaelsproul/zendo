@@ -55,7 +55,7 @@
     };
 
     let hasNature = false;
-    let call: "master" | "mondo" = "master";
+    let call: "master" | "mondo" = "mondo";
     const submitKoan = () => {
         if ($game.koans === undefined) {
             $game.koans = [];
@@ -195,10 +195,6 @@
             </div>
         {:else}
             <div class="control">
-                <label class="radio">
-                    <input type="radio" bind:group={call} name="call" value={"master"}>
-                    Master (only the master reviews; no guesses earned)
-                </label><br>
                 <label class="radio">
                     <input type=radio bind:group={call} name="call" value={"mondo"}>
                     Mondo (everyone reviews and predicts nature; guesses earned for correct predictions)

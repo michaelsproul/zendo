@@ -21,5 +21,9 @@ export default defineConfig({
         find: "@", replacement: path.resolve("./src")
       }
     ]
+  },
+  server: {
+    host: true,
+    port: 7777
   }
 })

@@ -96,11 +96,11 @@
     </div>
     <div class="card-content content">
         <blockquote>{$game.guessPending.guess}</blockquote>
-        <p>The player can update the guess if requested. Otherwise you can simply accept or reject it.</p>
+        <p>The player can update the guess if requested. You must either mark it as incorrect and
+	   provide a counter-example, or make it as correct and end the game.</p>
     </div>
     <div class="card-footer">
-        <button class="button card-footer-item is-danger" on:click="{() => acceptGuess()}">Accept as wrong</button>
-        <button class="button card-footer-item is-warning" on:click="{rejectGuess}">Reject</button>
+        <button class="button card-footer-item is-danger" on:click="{() => acceptGuess()}">Incorrect</button>
         <button class="button card-footer-item is-success" on:click="{() => modalWin = "is-active"}">Enlightenment Achieved!!</button>
     </div>
 </div>
